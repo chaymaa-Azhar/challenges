@@ -1,14 +1,20 @@
 const prompt=require('prompt-sync')();
 let taille=Number(prompt('entrer la taille de tableau : '));
 let tableau =[];
-let min=1;
+
 for(let i=0; i<taille; i++){
     let valeur=Number(prompt('entrer les valeurs de tableau  '))
     tableau.push(valeur)
-    if(taille[i]<min){
-        min=taille[i]
+}
+console.log(tableau)
+
+
+let min =tableau[0]
+
+for(let i=0; i<taille; i++){
+    if(tableau[i]<min){
+        min = tableau[i]
     }
 
 }
-console.log(tableau)
 console.log(`${min} est la valeur plus petite `)
