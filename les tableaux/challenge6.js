@@ -15,4 +15,15 @@ console.log(' multiplicantions de facteur est : ')
      r_tableau.push(multiple)
 }
 console.log(r_tableau)
+/*//autre methode(map) 
+let taille =Number(prompt('entre la taille de tableau :'))
+let factorie = Number(prompt('entre la factorie  :'))
+let tableau =[]
+for(let i=0; i<taille; i++){
+  let element =Number(prompt('entrer les element de tableau : '))
+  tableau.push(element)
+}
+console.log(tableau)
 
+let r_tableau=tableau.map((element)=>element*factorie)
+console.log(r_tableau)*/
